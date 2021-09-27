@@ -9,3 +9,19 @@ const circ = (diameter: number) => {
 };
 
 console.log(circ(0.1));
+
+let names = ["reyna", "cypher", "sova"];
+
+names.push("cypher");
+// names.push(10000); -- erorr
+
+let numbers = [10, 20, 30, 40];
+
+numbers.push(25);
+// numbers.push("120");
+
+let mixed = ["raze", 4, "skye", 10];
+
+mixed.push("ryu");
+mixed.push(10);
+mixed[0] = 10;
