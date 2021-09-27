@@ -25,3 +25,7 @@ let mixed = ["raze", 4, "skye", 10];
 mixed.push("ryu");
 mixed.push(10);
 mixed[0] = 10;
+
+//object
+
+let ninja = { name: "Mario", status: "masterclass", age: 10 };
