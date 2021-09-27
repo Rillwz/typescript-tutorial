@@ -29,3 +29,5 @@ mixed[0] = 10;
 //object
 
 let ninja = { name: "Mario", status: "masterclass", age: 10 };
+
+// ninja = { name: "Raze", status: "beginner", age: 90, skill: [] };

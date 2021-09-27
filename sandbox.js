@@ -18,3 +18,4 @@ mixed.push(10);
 mixed[0] = 10;
 //object
 var ninja = { name: "Mario", status: "masterclass", age: 10 };
+// ninja = { name: "Raze", status: "beginner", age: 90, skill: [] };
