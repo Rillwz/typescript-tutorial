@@ -31,3 +31,21 @@ mixed[0] = 10;
 let ninja = { name: "Mario", status: "masterclass", age: 10 };
 
 // ninja = { name: "Raze", status: "beginner", age: 90, skill: [] };
+
+let kame: any;
+
+kame = "rill";
+kame = 10;
+
+let mixedArray: any[] = [];
+
+mixedArray.push(5);
+mixedArray.push("Rill");
+mixedArray.push("false");
+
+console.log(mixed);
+
+let ninjas: { name: any; age: any };
+
+ninjas = { name: "Yusrils", age: 20 };
+console.log(ninjas);

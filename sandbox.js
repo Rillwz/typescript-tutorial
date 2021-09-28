@@ -19,3 +19,14 @@ mixed[0] = 10;
 //object
 var ninja = { name: "Mario", status: "masterclass", age: 10 };
 // ninja = { name: "Raze", status: "beginner", age: 90, skill: [] };
+var kame;
+kame = "rill";
+kame = 10;
+var mixedArray = [];
+mixedArray.push(5);
+mixedArray.push("Rill");
+mixedArray.push("false");
+console.log(mixed);
+var ninjas;
+ninjas = { name: "Yusrils", age: 20 };
+console.log(ninjas);
