@@ -1,6 +1,6 @@
-let greet: Function;
-
 // Functions basics
+
+let greet: Function;
 
 greet = () => {
   console.log("hello, again!");
@@ -52,6 +52,8 @@ calc = (numOne: number, numTwo: number, action: string) => {
 
 let logDetails: (obj: { name: string; age: number }) => void;
 
-logDetails = (ninja: { name: string; age: number }) => {
+type person = { name: string; age: number };
+
+logDetails = (ninja: person) => {
   console.log(`${ninja.name} is ${ninja.age} years old`);
 };
