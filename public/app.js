@@ -1,4 +1,20 @@
-import { Invoice } from "./classes/Invoice.js";
+const me = {
+    name: "Rill",
+    age: 20,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log("I spent", amount);
+        return amount;
+    },
+};
+let greetPerson = (person) => {
+    console.log("hello", person.name);
+};
+console.log(me);
+console.log(greetPerson);
+import { Invoice } from "./classes/Invoice";
 const invOne = new Invoice("Jett", "work in huge mountain", 300);
 const invTwo = new Invoice("Phoenix", "work in fire goverment", 300);
 //console.log(invOne, invTwo);
