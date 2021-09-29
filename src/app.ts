@@ -21,9 +21,6 @@ let invoices: Invoice[] = [];
 invoices.push(invOne);
 invoices.push(invTwo);
 
-invOne.client = "Yusril";
-invTwo.amount = 400;
-
 invoices.forEach((inv) => {
   console.log(inv.client, inv.amount, inv.format());
 });
