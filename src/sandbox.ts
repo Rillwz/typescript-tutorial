@@ -1,6 +1,6 @@
 let greet: Function;
 
-//greet = 'hello';
+// Functions basics
 
 greet = () => {
   console.log("hello, again!");
@@ -18,7 +18,7 @@ const minus = (a: number, b: number): number => {
 
 let result = minus(10, 7);
 
-// ---
+// --- Type Aliases
 
 type StringOrNum = string | number;
 type objWithName = { name: string; uid: StringOrNum };
@@ -27,4 +27,31 @@ const users = (user: objWithName) => {
   console.log(`${user.name} says hello!`);
 };
 
-// --
+// -- Function Signatures
+
+// example 1
+
+let gree: (a: string, b: string) => void;
+gree = (name: string, greeting: string) => {
+  console.log(`${name} says ${greeting}`);
+};
+
+// example 2
+
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+  if (action === "add") {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+};
+
+// example 3
+
+let logDetails: (obj: { name: string; age: number }) => void;
+
+logDetails = (ninja: { name: string; age: number }) => {
+  console.log(`${ninja.name} is ${ninja.age} years old`);
+};
