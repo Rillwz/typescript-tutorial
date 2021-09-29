@@ -17,3 +17,14 @@ const minus = (a: number, b: number): number => {
 };
 
 let result = minus(10, 7);
+
+// ---
+
+type StringOrNum = string | number;
+type objWithName = { name: string; uid: StringOrNum };
+
+const users = (user: objWithName) => {
+  console.log(`${user.name} says hello!`);
+};
+
+// --
