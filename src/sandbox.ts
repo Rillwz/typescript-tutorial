@@ -57,3 +57,30 @@ type person = { name: string; age: number };
 logDetails = (ninja: person) => {
   console.log(`${ninja.name} is ${ninja.age} years old`);
 };
+
+// interfaces
+interface IsPerson {
+  name: string;
+  age: number;
+  speak(a: string): void;
+  spend(a: number): number;
+}
+
+const me: IsPerson = {
+  name: "Rill",
+  age: 20,
+  speak(text: string): void {
+    console.log(text);
+  },
+  spend(amount: number): number {
+    console.log("I spent", amount);
+    return amount;
+  },
+};
+
+let greetPerson = (person: IsPerson) => {
+  console.log("hello", person.name);
+};
+
+console.log(me);
+console.log(greetPerson);

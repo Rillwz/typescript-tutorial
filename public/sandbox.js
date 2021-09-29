@@ -36,3 +36,19 @@ let logDetails;
 logDetails = (ninja) => {
     console.log(`${ninja.name} is ${ninja.age} years old`);
 };
+const me = {
+    name: "Rill",
+    age: 20,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log("I spent", amount);
+        return amount;
+    },
+};
+let greetPerson = (person) => {
+    console.log("hello", person.name);
+};
+console.log(me);
+console.log(greetPerson);
