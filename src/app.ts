@@ -19,10 +19,14 @@ const list = new listTemplate(ul);
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
 
+  // strict-tuples
+  let values: [string, string, number];
+  values = [tofrom.value, details.value, amount.valueAsNumber];
+
   let doc: HasFormatter;
 
   if (type.value === "invoice") {
-    doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+    doc = new Invoice(...values);
   } else {
     doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
   }
@@ -71,3 +75,17 @@ const docFour: Resource<string[]> = {
 };
 
 console.log(docThree, docFour);
+
+// tuples
+
+let arr = ["ryu", 25, true];
+arr[0] = false;
+arr[1] = "yoshi";
+arr = [30, false, false];
+
+// strict array ( tuples )
+
+let tup: [string, number, boolean] = ["ryu", 25, true];
+tup[0] = "lb32";
+tup[1] = 20;
+tup[2] = false;
